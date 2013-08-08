@@ -10,6 +10,7 @@ curl).
 
 Just start the script with ./run_all.sh from the main directory, the output should be:
 
+```bash
 C++: 
 SHA1      : 0HCrwavWOUBCdySetlbrzqX196E=
 OK        : true
@@ -24,3 +25,4 @@ Bash:
 SHA1      : 0HCrwavWOUBCdySetlbrzqX196E=
 OK        : true
 Signature : K8Ml5J7spAy9p246MKgKYRLLSnlLB9svVzThhKq/ffZnbbvS7YtMV9+FO2iaA7iWKWtovYjngXjn0DPwySyJO0eSQHylGXZI3khZHcZRKwLXET2uPTtEMavT8eYtLlrQpeMnZbyhq4Uwc/4XCYDe+jGOLK4aqJobOPuy2u1wsrU=
+```
