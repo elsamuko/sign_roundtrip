@@ -12,17 +12,18 @@ Just start the script with ./run_all.sh from the main directory, the output shou
 
 ```bash
 C++: 
-SHA1      : 0HCrwavWOUBCdySetlbrzqX196E=
+SHA256    : I6y8EgCFG2H6PTHVZyHR10nnN1FZnvvxv8Izrut+Jgs=
 OK        : true
-Signature : K8Ml5J7spAy9p246MKgKYRLLSnlLB9svVzThhKq/ffZnbbvS7YtMV9+FO2iaA7iWKWtovYjngXjn0DPwySyJO0eSQHylGXZI3khZHcZRKwLXET2uPTtEMavT8eYtLlrQpeMnZbyhq4Uwc/4XCYDe+jGOLK4aqJobOPuy2u1wsrU=
+Signature : kCbtJcwGaB8f4LkFrw1yPlcKLjkQdhBErJisgkpNuLv55sQ1O0bEaV0klrQr9us7BXZOSdIOXS/D20iFhr9Sge9+9weRRNpo+hdoDnC5VagqmuWlenhwG9mMj6//aV8HEeeoIEYljSMQTug4MErSr44+uyyx34B51XlFpbkBtG4lk0oO69ZfYe1EWHqYIeOfySOV14Gek/h4JdR0+CEgWpaqUL1Iz4iztucWid0aas/6GbzswY6zE2+7SIC3jpv4JFU9ehacMcNw7jkWdCVYeUm/2aJuwIbe4cuMmnpIFGAbFhdZ6SkLM5xwmkdgjzvu/a+bbj/Y2kBxmv62t9bhYQ==
 
 Groovy: 
-SHA1      : 0HCrwavWOUBCdySetlbrzqX196E=
+SHA256    : I6y8EgCFG2H6PTHVZyHR10nnN1FZnvvxv8Izrut+Jgs=
 OK        : true
-Signature : K8Ml5J7spAy9p246MKgKYRLLSnlLB9svVzThhKq/ffZnbbvS7YtMV9+FO2iaA7iWKWtovYjngXjn0DPwySyJO0eSQHylGXZI3khZHcZRKwLXET2uPTtEMavT8eYtLlrQpeMnZbyhq4Uwc/4XCYDe+jGOLK4aqJobOPuy2u1wsrU=
+Signature : kCbtJcwGaB8f4LkFrw1yPlcKLjkQdhBErJisgkpNuLv55sQ1O0bEaV0klrQr9us7BXZOSdIOXS/D20iFhr9Sge9+9weRRNpo+hdoDnC5VagqmuWlenhwG9mMj6//aV8HEeeoIEYljSMQTug4MErSr44+uyyx34B51XlFpbkBtG4lk0oO69ZfYe1EWHqYIeOfySOV14Gek/h4JdR0+CEgWpaqUL1Iz4iztucWid0aas/6GbzswY6zE2+7SIC3jpv4JFU9ehacMcNw7jkWdCVYeUm/2aJuwIbe4cuMmnpIFGAbFhdZ6SkLM5xwmkdgjzvu/a+bbj/Y2kBxmv62t9bhYQ==
 
 Bash: 
-SHA1      : 0HCrwavWOUBCdySetlbrzqX196E=
+SHA256    : I6y8EgCFG2H6PTHVZyHR10nnN1FZnvvxv8Izrut+Jgs=
 OK        : true
-Signature : K8Ml5J7spAy9p246MKgKYRLLSnlLB9svVzThhKq/ffZnbbvS7YtMV9+FO2iaA7iWKWtovYjngXjn0DPwySyJO0eSQHylGXZI3khZHcZRKwLXET2uPTtEMavT8eYtLlrQpeMnZbyhq4Uwc/4XCYDe+jGOLK4aqJobOPuy2u1wsrU=
+Signature : kCbtJcwGaB8f4LkFrw1yPlcKLjkQdhBErJisgkpNuLv55sQ1O0bEaV0klrQr9us7BXZOSdIOXS/D20iFhr9Sge9+9weRRNpo+hdoDnC5VagqmuWlenhwG9mMj6//aV8HEeeoIEYljSMQTug4MErSr44+uyyx34B51XlFpbkBtG4lk0oO69ZfYe1EWHqYIeOfySOV14Gek/h4JdR0+CEgWpaqUL1Iz4iztucWid0aas/6GbzswY6zE2+7SIC3jpv4JFU9ehacMcNw7jkWdCVYeUm/2aJuwIbe4cuMmnpIFGAbFhdZ6SkLM5xwmkdgjzvu/a+bbj/Y2kBxmv62t9bhYQ==
+
 ```
