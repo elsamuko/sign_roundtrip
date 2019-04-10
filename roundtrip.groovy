@@ -1,3 +1,7 @@
+#!/usr/bin/env groovy
+
+@Grab(group='org.bouncycastle', module='bcprov-jdk15on', version='1.61')
+@Grab(group='org.bouncycastle', module='bcpkix-jdk15on', version='1.61')
 
 import java.security.*
 import java.security.spec.*
@@ -7,8 +11,8 @@ import org.bouncycastle.crypto.params.*
 import org.bouncycastle.crypto.util.*
 import org.bouncycastle.openssl.*
 
-byte[] sha1( byte[] data ) {
-    MessageDigest md = MessageDigest.getInstance( "SHA-1" )
+byte[] sha256( byte[] data ) {
+    MessageDigest md = MessageDigest.getInstance( "SHA-256" )
     md.update( data )
     md.digest()
 }
@@ -31,7 +35,7 @@ PublicKey getPublicKeyFromString( String keystr ) throws Exception {
         rsaPub = kf.generatePublic( rsaSpec )
     }
     
-    rsaPub
+    return rsaPub
 }
 
 PrivateKey getPrivateKeyFromString( String keystr ) throws Exception {
@@ -57,7 +61,7 @@ PrivateKey getPrivateKeyFromString( String keystr ) throws Exception {
         rsaPriv = kf.generatePrivate( rsaSpec )
     }
     
-    rsaPriv
+    return rsaPriv
 }
 
 
@@ -73,19 +77,19 @@ PrivateKey privKey = getPrivateKeyFromString( privatePEM )
 
 
 // sign and verify
-Signature instance = Signature.getInstance( "SHA1withRSA" )
-instance.initSign( privKey )
-instance.update( data.getBytes() )
-byte[] signature = instance.sign()
+Signature signer = Signature.getInstance( "SHA256withRSA" )
+signer.initSign( privKey )
+signer.update( data.getBytes() )
+byte[] signature = signer.sign()
 
-Signature instance2 = Signature.getInstance( "SHA1withRSA" );
-instance2.initVerify( pubKey );
-instance2.update( data.getBytes() )
-boolean ok = instance2.verify( signature );
+Signature verifier = Signature.getInstance( "SHA256withRSA" );
+verifier.initVerify( pubKey );
+verifier.update( data.getBytes() )
+boolean ok = verifier.verify( signature );
 
 
 // info
-println "SHA1      : ${sha1( data.getBytes() ).encodeBase64()}"
+println "SHA256    : ${sha256( data.getBytes() ).encodeBase64()}"
 println "OK        : ${ok}"
 println "Signature : ${signature.encodeBase64()}"
 
